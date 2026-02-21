@@ -1,0 +1,104 @@
+"use client"
+
+import Header from "@/components/header"
+import Footer from "@/components/footer"
+import BreadcrumbNav from "@/components/breadcrumb-nav"
+import { useSearchParams } from "next/navigation"
+import { Suspense } from "react"
+import { ArrowUp } from "lucide-react"
+
+function AboutContent() {
+  const searchParams = useSearchParams()
+  const activeTab = searchParams.get("tab") || "vision"
+
+  const tabs = [
+    { id: "vision", label: "Vision" },
+    { id: "history", label: "History" },
+    { id: "contact", label: "Contact" },
+  ]
+
+  return (
+    <div className="min-h-screen flex flex-col bg-[#ffffff]">
+      <Header />
+
+      <main className="flex-1">
+        <div className="max-w-[1280px] mx-auto px-6">
+          {/* Breadcrumb */}
+          <BreadcrumbNav
+            items={[
+              { label: "Home", href: "/" },
+              { label: "About", href: "/about" },
+              { label: activeTab.charAt(0).toUpperCase() + activeTab.slice(1) },
+            ]}
+          />
+
+          {/* Title */}
+          <h1 className="text-2xl font-bold text-[#1a1a1a] mb-6">
+            {activeTab.charAt(0).toUpperCase() + activeTab.slice(1)}
+          </h1>
+
+          {/* Tabs */}
+          <div className="flex gap-2 mb-10">
+            {tabs.map((tab) => (
+              <a
+                key={tab.id}
+                href={`/about?tab=${tab.id}`}
+                className={`px-4 py-2 text-sm font-medium border transition-colors ${
+                  activeTab === tab.id
+                    ? "bg-[#004127] text-[#ffffff] border-[#004127]"
+                    : "bg-[#ffffff] text-[#4f4f4f] border-[#cfcfcf] hover:border-[#004127]"
+                }`}
+              >
+                {tab.label}
+              </a>
+            ))}
+          </div>
+
+          {/* Content Area */}
+          <div className="py-8">
+            {/* Placeholder image */}
+            <div className="w-full max-w-[480px] mx-auto mb-8">
+              <div className="w-full h-4 bg-[#4f4f4f] rounded-full mb-2" />
+              <div className="w-[60%] h-4 bg-[#7d7d7d] rounded-full" />
+            </div>
+
+            {/* Headline */}
+            <h2 className="text-xl font-semibold text-[#1a1a1a] text-center mb-6">
+              Headline goes here
+            </h2>
+
+            {/* Description placeholder */}
+            <div className="max-w-[480px] mx-auto space-y-2 mb-8">
+              <div className="h-2.5 bg-[#cfcfcf] rounded-full w-full" />
+              <div className="h-2.5 bg-[#cfcfcf] rounded-full w-full" />
+              <div className="h-2.5 bg-[#cfcfcf] rounded-full w-[90%]" />
+              <div className="h-2.5 bg-[#eef1f4] rounded-full w-[80%]" />
+              <div className="h-2.5 bg-[#eef1f4] rounded-full w-[70%]" />
+            </div>
+          </div>
+        </div>
+
+        {/* Scroll to top */}
+        <div className="fixed bottom-8 right-8">
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="w-10 h-10 bg-[#1a1a1a] text-[#ffffff] rounded-full flex items-center justify-center hover:bg-[#4f4f4f] transition-colors"
+            aria-label="Scroll to top"
+          >
+            <ArrowUp className="w-4 h-4" />
+          </button>
+        </div>
+      </main>
+
+      <Footer />
+    </div>
+  )
+}
+
+export default function AboutPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-[#ffffff]" />}>
+      <AboutContent />
+    </Suspense>
+  )
+}
