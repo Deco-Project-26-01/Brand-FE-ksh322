@@ -14,7 +14,6 @@ export default function HomePage() {
           <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden">
             <Image
               src="/images/decoindco_hkdtc2025.png"
-              alt="Decoindco jewelry showcase at HKDTC 2025"
               fill
               className="object-cover"
               priority
@@ -68,13 +67,12 @@ export default function HomePage() {
               </div>
               <Link href="#" className="inline-block mt-4 text-xs text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
                 OEM & ODM • 20+ countries
-
               </Link>
             </div>
             <div className="w-full md:w-[240px] flex-shrink-0">
               <div className="relative w-full h-[160px] overflow-hidden">
                 <Image
-                  src="/images/leather-goods.jpg"
+                  src="/images/jewelry-store.jpg"
                   alt="Leather Goods"
                   fill
                   className="object-cover"
