@@ -30,8 +30,8 @@ function BrandContent() {
                 key={cat.id}
                 href={`/brand?category=${cat.id}`}
                 className={`py-3 text-sm font-medium border-b-2 transition-colors ${category === cat.id
-                    ? "border-[#004127] text-[#004127]"
-                    : "border-transparent text-[#7d7d7d] hover:text-[#1a1a1a]"
+                  ? "border-[#004127] text-[#004127]"
+                  : "border-transparent text-[#7d7d7d] hover:text-[#1a1a1a]"
                   }`}
               >
                 {cat.label}

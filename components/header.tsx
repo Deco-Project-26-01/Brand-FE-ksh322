@@ -19,10 +19,10 @@ const navItems = [
     label: "Brand",
     href: "/brand",
     submenu: [
-      { label: "Rings", href: "/brand?category=rings" },
+
       { label: "Bracelets", href: "/brand?category=bracelets" },
       { label: "Necklaces", href: "/brand?category=necklaces" },
-      { label: "Earrings", href: "/brand?category=earrings" },
+
     ],
   },
   { label: "News", href: "/news" },
@@ -62,9 +62,8 @@ export default function Header() {
             return (
               <div key={item.label} className="relative">
                 <button
-                  className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-[#f1bc69] ${
-                    isActive ? "text-[#f1bc69]" : "text-[#ffffff]"
-                  }`}
+                  className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-[#f1bc69] ${isActive ? "text-[#f1bc69]" : "text-[#ffffff]"
+                    }`}
                   onClick={() => {
                     if (item.submenu) {
                       setOpenMenu(openMenu === item.label ? null : item.label)
