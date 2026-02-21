@@ -59,26 +59,22 @@ export default function Header() {
           {navItems.map((item) => {
             const isActive =
               pathname === item.href || pathname.startsWith(item.href.split("?")[0])
+            const navItemClass = `flex items-center gap-1 text-sm font-medium transition-colors hover:text-[#f1bc69] ${isActive ? "text-[#f1bc69]" : "text-[#ffffff]"}`
             return (
               <div key={item.label} className="relative">
-                <button
-                  className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-[#f1bc69] ${isActive ? "text-[#f1bc69]" : "text-[#ffffff]"
-                    }`}
-                  onClick={() => {
-                    if (item.submenu) {
-                      setOpenMenu(openMenu === item.label ? null : item.label)
-                    }
-                  }}
-                  onMouseEnter={() => {
-                    if (item.submenu) setOpenMenu(item.label)
-                  }}
-                >
-                  {!item.submenu ? (
-                    <Link href={item.href}>{item.label}</Link>
-                  ) : (
-                    item.label
-                  )}
-                </button>
+                {item.submenu ? (
+                  <button
+                    className={navItemClass}
+                    onClick={() => setOpenMenu(openMenu === item.label ? null : item.label)}
+                    onMouseEnter={() => setOpenMenu(item.label)}
+                  >
+                    {item.label}
+                  </button>
+                ) : (
+                  <Link href={item.href} className={navItemClass}>
+                    {item.label}
+                  </Link>
+                )}
 
                 {item.submenu && openMenu === item.label && (
                   <div
