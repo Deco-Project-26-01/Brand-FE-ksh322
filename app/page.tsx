@@ -13,8 +13,8 @@ export default function HomePage() {
         <section className="relative w-full">
           <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden">
             <Image
-              src="/images/hero-ring.jpg"
-              alt="DECO Diamond Ring"
+              src="/images/decoindco_hkdtc2025.png"
+              alt="Decoindco jewelry showcase at HKDTC 2025"
               fill
               className="object-cover"
               priority
@@ -36,7 +36,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex-1">
-              <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">Headline goes here</h2>
+              <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">Decoindco — Custom Jewellery Manufacturer in South Korea</h2>
               <div className="space-y-2">
                 <div className="h-2.5 bg-[#cfcfcf] rounded-full w-full" />
                 <div className="h-2.5 bg-[#cfcfcf] rounded-full w-full" />
@@ -44,7 +44,7 @@ export default function HomePage() {
                 <div className="h-2.5 bg-[#eef1f4] rounded-full w-[80%]" />
               </div>
               <Link href="#" className="inline-block mt-4 text-xs text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
-                MORE
+                Since 1986, we export to 20+ countries like UAE,Hong Kong(China),India,Japan,USA
               </Link>
             </div>
           </div>
@@ -58,7 +58,8 @@ export default function HomePage() {
         <section className="max-w-[1280px] mx-auto px-6 py-12">
           <div className="flex flex-col md:flex-row items-start gap-8">
             <div className="flex-1">
-              <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">Headline goes here</h2>
+              <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">We are a manufacturer of the 10k,14k,18k mounting for "tennis bracelets,necklace,
+                earrings"for diamonds color stones. </h2>
               <div className="space-y-2">
                 <div className="h-2.5 bg-[#cfcfcf] rounded-full w-full" />
                 <div className="h-2.5 bg-[#cfcfcf] rounded-full w-full" />
@@ -66,7 +67,8 @@ export default function HomePage() {
                 <div className="h-2.5 bg-[#eef1f4] rounded-full w-[70%]" />
               </div>
               <Link href="#" className="inline-block mt-4 text-xs text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
-                MORE
+                OEM & ODM • 20+ countries
+
               </Link>
             </div>
             <div className="w-full md:w-[240px] flex-shrink-0">
