@@ -43,11 +43,10 @@ function AboutContent() {
               <a
                 key={tab.id}
                 href={`/about?tab=${tab.id}`}
-                className={`px-4 py-2 text-sm font-medium border transition-colors ${
-                  activeTab === tab.id
-                    ? "bg-[#004127] text-[#ffffff] border-[#004127]"
-                    : "bg-[#ffffff] text-[#4f4f4f] border-[#cfcfcf] hover:border-[#004127]"
-                }`}
+                className={`px-4 py-2 text-sm font-medium border transition-colors ${activeTab === tab.id
+                  ? "bg-[#004127] text-[#ffffff] border-[#004127]"
+                  : "bg-[#ffffff] text-[#4f4f4f] border-[#cfcfcf] hover:border-[#004127]"
+                  }`}
               >
                 {tab.label}
               </a>
@@ -64,7 +63,7 @@ function AboutContent() {
 
             {/* Headline */}
             <h2 className="text-xl font-semibold text-[#1a1a1a] text-center mb-6">
-              Headline goes here
+              Deco Industry Co., Ltd. was established at 15-8, Seonhwa-ro 63-gil, Iksan-si, Jeollabuk-do (Yeongdeung-dong)
             </h2>
 
             {/* Description placeholder */}
@@ -75,8 +74,12 @@ function AboutContent() {
               <div className="h-2.5 bg-[#eef1f4] rounded-full w-[80%]" />
               <div className="h-2.5 bg-[#eef1f4] rounded-full w-[70%]" />
             </div>
+
+
           </div>
         </div>
+        <hr></hr>
+
 
         {/* Scroll to top */}
         <div className="fixed bottom-8 right-8">
