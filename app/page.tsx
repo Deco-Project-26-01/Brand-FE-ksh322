@@ -14,6 +14,7 @@ export default function HomePage() {
           <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden">
             <Image
               src="/images/decoindco_hkdtc2025.png"
+              alt="Decoindco at HKDTC 2025 exhibition"
               fill
               className="object-cover"
               priority
