@@ -6,6 +6,7 @@ import BreadcrumbNav from "@/components/breadcrumb-nav"
 import { useSearchParams } from "next/navigation"
 import { Suspense } from "react"
 import { ArrowUp } from "lucide-react"
+import Image from "next/image"
 
 function AboutContent() {
   const searchParams = useSearchParams()
@@ -94,6 +95,24 @@ function AboutContent() {
                   <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Main Markets</h2>
                   <p className="text-sm text-[#4f4f4f] leading-relaxed">UAE, Hong Kong (China), India, Japan, USA</p>
                 </div>
+              </div>
+            ) : activeTab === "history" ? (
+              <div className="max-w-[700px] mx-auto text-center">
+                {/* Factory image */}
+                <div className="relative w-full aspect-[16/9] mb-8 overflow-hidden rounded">
+                  <Image
+                    src="/images/decoindcoltd_factory.JPG"
+                    alt="Deco Industry Co., Ltd. Factory"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+
+                {/* Headline */}
+                <h2 className="text-xl font-semibold text-[#1a1a1a] mb-6">
+                  Established 1986 by Kim Eung-yeol
+                </h2>
               </div>
             ) : (
               <>
