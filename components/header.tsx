@@ -62,7 +62,7 @@ export default function Header() {
             return (
               <div key={item.label} className="relative">
                 <button
-                  className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-[#f1bc69] ${isActive ? "text-[#f1bc69]" : "text-[#ffffff]"
+                  className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-[#f1bc69] cursor-pointer ${isActive ? "text-[#f1bc69]" : "text-[#ffffff]"
                     }`}
                   onClick={() => {
                     if (item.submenu) {
@@ -135,14 +135,14 @@ export default function Header() {
 
         {/* Right side */}
         <div className="flex items-center gap-4">
-          <button className="text-[#ffffff] hover:text-[#f1bc69] transition-colors" aria-label="Search">
+          <button className="text-[#ffffff] hover:text-[#f1bc69] transition-colors cursor-pointer" aria-label="Search">
             <Search className="w-4 h-4" />
           </button>
 
           {/* Language selector */}
           <div className="relative">
             <button
-              className="flex items-center gap-1 text-sm text-[#ffffff] hover:text-[#f1bc69] transition-colors"
+              className="flex items-center gap-1 text-sm text-[#ffffff] hover:text-[#f1bc69] transition-colors cursor-pointer"
               onClick={() => setLangOpen(!langOpen)}
             >
               EN
@@ -150,10 +150,10 @@ export default function Header() {
             </button>
             {langOpen && (
               <div className="absolute top-full right-0 mt-2 bg-[#ffffff] text-[#1a1a1a] rounded shadow-lg min-w-[80px] py-1 z-50">
-                <button className="block w-full text-left px-4 py-2 text-sm hover:bg-[#eef1f4]">
+                <button className="block w-full text-left px-4 py-2 text-sm hover:bg-[#eef1f4] cursor-pointer">
                   EN
                 </button>
-                <button className="block w-full text-left px-4 py-2 text-sm hover:bg-[#eef1f4]">
+                <button className="block w-full text-left px-4 py-2 text-sm hover:bg-[#eef1f4] cursor-pointer">
                   KR
                 </button>
               </div>

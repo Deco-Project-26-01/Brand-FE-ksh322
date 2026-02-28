@@ -85,16 +85,16 @@ function NewsContent() {
 
           {/* Pagination */}
           <div className="flex items-center justify-center gap-2 pb-12">
-            <button className="w-8 h-8 flex items-center justify-center text-sm font-medium bg-[#004127] text-[#ffffff] rounded">
+            <button className="w-8 h-8 flex items-center justify-center text-sm font-medium bg-[#004127] text-[#ffffff] rounded cursor-pointer">
               1
             </button>
-            <button className="w-8 h-8 flex items-center justify-center text-sm font-medium text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
+            <button className="w-8 h-8 flex items-center justify-center text-sm font-medium text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors cursor-pointer">
               2
             </button>
-            <button className="w-8 h-8 flex items-center justify-center text-sm font-medium text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
+            <button className="w-8 h-8 flex items-center justify-center text-sm font-medium text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors cursor-pointer">
               3
             </button>
-            <button className="w-8 h-8 flex items-center justify-center text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
+            <button className="w-8 h-8 flex items-center justify-center text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors cursor-pointer">
               <ChevronRight className="w-4 h-4" />
             </button>
           </div>
@@ -104,7 +104,7 @@ function NewsContent() {
         <div className="fixed bottom-8 right-8">
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="w-10 h-10 bg-[#1a1a1a] text-[#ffffff] rounded-full flex items-center justify-center hover:bg-[#4f4f4f] transition-colors"
+            className="w-10 h-10 bg-[#1a1a1a] text-[#ffffff] rounded-full flex items-center justify-center hover:bg-[#4f4f4f] transition-colors cursor-pointer"
             aria-label="Scroll to top"
           >
             <ArrowUp className="w-4 h-4" />
