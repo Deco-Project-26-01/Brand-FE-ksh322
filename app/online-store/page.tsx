@@ -10,13 +10,13 @@ const products = [
   {
     id: 1,
     title: "제목입니다",
-    images: ["/images/ring-product-1.jpg", "/jewelry-store.jpg", "/images/diamond-ring-2.jpg"],
+    images: ["/images/ring-product-1.jpg", "/images/jewelry-store.jpg", "/images/diamond-ring-2.jpg"],
     moreLink: "#",
   },
   {
     id: 2,
     title: "제목입니다",
-    images: ["/images/ring-product-2.jpg", "/jewelry-store.jpg", "/images/jewelry-store.jpg"],
+    images: ["/images/ring-product-2.jpg", "/images/jewelry-store.jpg", "/images/jewelry-store.jpg"],
     moreLink: "#",
   },
 ]
