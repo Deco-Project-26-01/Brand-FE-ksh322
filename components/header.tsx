@@ -62,7 +62,7 @@ export default function Header() {
             return (
               <div key={item.label} className="relative">
                 <button
-                  className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-[#f1bc69] ${isActive ? "text-[#f1bc69]" : "text-[#ffffff]"
+                  className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-[#f1bc69] cursor-pointer ${isActive ? "text-[#f1bc69]" : "text-[#ffffff]"
                     }`}
                   onClick={() => {
                     if (item.submenu) {
@@ -78,40 +78,71 @@ export default function Header() {
                   ) : (
                     item.label
                   )}
+                  {item.submenu && (
+                    <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${openMenu === item.label ? "rotate-180" : ""}`} />
+                  )}
                 </button>
-
-                {item.submenu && openMenu === item.label && (
-                  <div
-                    className="absolute top-full left-0 mt-2 bg-[#ffffff] text-[#1a1a1a] rounded shadow-lg min-w-[160px] py-2 z-50"
-                    onMouseLeave={() => setOpenMenu(null)}
-                  >
-                    {item.submenu.map((sub) => (
-                      <Link
-                        key={sub.label}
-                        href={sub.href}
-                        className="block px-4 py-2 text-sm hover:bg-[#eef1f4] transition-colors"
-                        onClick={() => setOpenMenu(null)}
-                      >
-                        {sub.label}
-                      </Link>
-                    ))}
-                  </div>
-                )}
               </div>
             )
           })}
         </nav>
 
+        {/* Full-width mega dropdown */}
+        {navItems.map((item) =>
+          item.submenu && openMenu === item.label ? (
+            <div
+              key={item.label}
+              className="absolute top-full left-0 w-full bg-[#ffffff] text-[#1a1a1a] shadow-xl border-t border-[#eef1f4] z-50"
+              onMouseLeave={() => setOpenMenu(null)}
+            >
+              <div className="max-w-[1280px] mx-auto px-6 py-8">
+                <div className="flex gap-16">
+                  {/* Left: Section title */}
+                  <div className="min-w-[140px]">
+                    <h3 className="text-xs font-semibold text-[#7d7d7d] uppercase tracking-wider mb-4">
+                      {item.label}
+                    </h3>
+                    <Link
+                      href={item.href}
+                      className="text-sm text-[#004127] font-medium hover:underline"
+                      onClick={() => setOpenMenu(null)}
+                    >
+                      View All
+                    </Link>
+                  </div>
+
+                  {/* Right: Submenu items */}
+                  <div className="flex gap-10">
+                    {item.submenu.map((sub) => (
+                      <Link
+                        key={sub.label}
+                        href={sub.href}
+                        className="group flex flex-col items-start"
+                        onClick={() => setOpenMenu(null)}
+                      >
+                        <span className="text-base font-medium text-[#1a1a1a] group-hover:text-[#004127] transition-colors">
+                          {sub.label}
+                        </span>
+                        <span className="mt-1 h-0.5 w-0 bg-[#004127] group-hover:w-full transition-all duration-300" />
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ) : null
+        )}
+
         {/* Right side */}
         <div className="flex items-center gap-4">
-          <button className="text-[#ffffff] hover:text-[#f1bc69] transition-colors" aria-label="Search">
+          <button className="text-[#ffffff] hover:text-[#f1bc69] transition-colors cursor-pointer" aria-label="Search">
             <Search className="w-4 h-4" />
           </button>
 
           {/* Language selector */}
           <div className="relative">
             <button
-              className="flex items-center gap-1 text-sm text-[#ffffff] hover:text-[#f1bc69] transition-colors"
+              className="flex items-center gap-1 text-sm text-[#ffffff] hover:text-[#f1bc69] transition-colors cursor-pointer"
               onClick={() => setLangOpen(!langOpen)}
             >
               EN
@@ -119,10 +150,10 @@ export default function Header() {
             </button>
             {langOpen && (
               <div className="absolute top-full right-0 mt-2 bg-[#ffffff] text-[#1a1a1a] rounded shadow-lg min-w-[80px] py-1 z-50">
-                <button className="block w-full text-left px-4 py-2 text-sm hover:bg-[#eef1f4]">
+                <button className="block w-full text-left px-4 py-2 text-sm hover:bg-[#eef1f4] cursor-pointer">
                   EN
                 </button>
-                <button className="block w-full text-left px-4 py-2 text-sm hover:bg-[#eef1f4]">
+                <button className="block w-full text-left px-4 py-2 text-sm hover:bg-[#eef1f4] cursor-pointer">
                   KR
                 </button>
               </div>

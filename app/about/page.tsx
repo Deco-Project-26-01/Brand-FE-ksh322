@@ -73,7 +73,7 @@ function AboutContent() {
                 </ul>
                 <hr className="my-6 border-[#cfcfcf]" />
                 <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
-                  <li>Address: 15-8, Seonhwa-ro 63-gil, Iksan-si, Jeollabuk-do, Republic of Korea</li>
+                  <li>Address: 215-8, Seonhwa-ro 63-gil, Iksan-city, Jeollabuk-do, Republic of Korea</li>
                 </ul>
               </div>
             ) : activeTab === "about us" ? (
@@ -127,7 +127,7 @@ function AboutContent() {
         <div className="fixed bottom-8 right-8">
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="w-10 h-10 bg-[#1a1a1a] text-[#ffffff] rounded-full flex items-center justify-center hover:bg-[#4f4f4f] transition-colors"
+            className="w-10 h-10 bg-[#F1BC69] text-[#1a1a1a] rounded-full flex items-center justify-center hover:bg-[#e0a94f] transition-colors cursor-pointer"
             aria-label="Scroll to top"
           >
             <ArrowUp className="w-4 h-4" />
