@@ -14,7 +14,7 @@ const newsItems = [
   { id: 3, title: "Jewellery & Gem WORLD Hong Kong 2026", image: "/images/conference.jpg" },
   { id: 4, title: "JCK Show Las Vegas 2026", image: "/images/conference.jpg" },
   { id: 5, title: "$5 million Export Tower ,2004", image: "/images/conference.jpg" },
-  { id: 6, title: "This is News Title", image: "/images/conference.jpg" },
+  { id: 6, title: "$30 millioni Export Tower, 2022", image: "/images/conference.jpg" },
 ]
 
 function NewsContent() {

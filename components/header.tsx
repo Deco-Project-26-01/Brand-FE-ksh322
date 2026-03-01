@@ -161,7 +161,7 @@ export default function Header() {
           </div>
 
           <Link
-            href="/online-store"
+            href="#"
             className="bg-[#ffffff] text-[#004127] text-xs font-semibold px-4 py-2 rounded hover:bg-[#eef1f4] transition-colors"
           >
             Online Store
