@@ -13,7 +13,7 @@ const exhibitions = [
   { id: 6, title: "2024 HONG KONG JEWELRY FAIR", date: "2024.07.20" },
   { id: 5, title: "2024 JUNE HONG KONG EXHIBITION", date: "2024.04.29" },
   { id: 4, title: "2024 MARCH HONG KONG EXHIBITON", date: "2024.01.30" },
-  { id: 3, title: "2023 SEPTEMBER BANGKOK & HONG KONG EXHIB...", date: "2023.08.02" },
+  { id: 3, title: "2023 SEPTEMBER HONG KONG EXHIBITION", date: "2023.08.02" },
   { id: 2, title: "2023 JUNE HONG KONG EXHIBITION", date: "2023.05.19" },
   { id: 1, title: "2023 MARCH HONG KONG EXHIBITION", date: "2023.02.02" },
 ]
