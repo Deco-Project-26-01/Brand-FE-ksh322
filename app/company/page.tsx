@@ -160,9 +160,9 @@ function AboutContent() {
                 <section className="mb-8">
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Our selection</h3>
                   <ul className="space-y-1">
-                    <li><a href="/brand" className="text-[#004127] hover:underline text-sm">Tennis bracelets</a></li>
-                    <li><a href="/brand?category=bracelets" className="text-[#004127] hover:underline text-sm">Tennis necklaces</a></li>
-                    <li><a href="//brand?category=necklace" className="text-[#004127] hover:underline text-sm">Tennis earrings</a></li>
+                    <li><a href="/brand?category=bracelets" className="text-[#004127] hover:underline text-sm">Tennis bracelets</a></li>
+                    <li><a href="/brand?category=necklace" className="text-[#004127] hover:underline text-sm">Tennis necklaces</a></li>
+                    <li><a href="/brand?category=earrings" className="text-[#004127] hover:underline text-sm">Tennis earrings</a></li>
                     <li><a href="/products" className="text-[#004127] hover:underline text-sm">Diamond mountings</a></li>
 
                     <li className="text-sm text-[#1a1a1a]">Custom jewelry designs</li>
