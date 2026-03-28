@@ -143,7 +143,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className="bg-[#ffffff] text-[#004127] text-xs font-semibold px-4 py-2 rounded hover:bg-[#eef1f4] transition-colors"
           >
-            Online Store
+            B2B Store
           </a>
         </div>
       </div>
