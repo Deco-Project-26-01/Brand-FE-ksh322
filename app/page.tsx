@@ -39,7 +39,7 @@ export default function HomePage() {
               <Link href="#" className="inline-block mt-4 text-xs text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
                 We are a manufacturer of the 10k,14k,18k mounting for "tennis bracelets,necklace,
                 earrings" for diamonds color stones.
-                <p> We work exclusively with high-quality gold materials, including 10k, 14k, and 18k gold. All materials are carefully selected and sourced from trusted suppliers.
+                <p> We work exclusively with high-quality gold materials. All materials are carefully selected and sourced from trusted suppliers.
                 </p>
               </Link>
             </div>

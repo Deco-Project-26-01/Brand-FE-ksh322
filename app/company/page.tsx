@@ -40,19 +40,20 @@ function AboutContent() {
           </h1>
 
           {/* Tabs */}
-          <div className="flex gap-2 mb-10 overflow-x-auto -mx-6 px-6">
-            {tabs.map((tab) => (
-              <a
-                key={tab.id}
-                href={`/company?tab=${tab.id}`}
-                className={`px-3 py-2 text-sm font-medium border transition-colors whitespace-nowrap flex-shrink-0 ${activeTab === tab.id
-                  ? "bg-[#004127] text-[#ffffff] border-[#004127]"
-                  : "bg-[#ffffff] text-[#4f4f4f] border-[#cfcfcf] hover:border-[#004127]"
-                  }`}
-              >
-                {tab.label}
-              </a>
-            ))}
+          <div className="flex w-full mb-10">
+          {tabs.map((tab) => (
+            
+              key={tab.id}
+              href={`/company?tab=${tab.id}`}
+              className={`flex-1 text-center px-3 py-2 text-sm font-medium border transition-colors ${
+                activeTab === tab.id
+                  ? "bg-[#004127] text-white border-[#004127]"
+                  : "bg-white text-[#4f4f4f] border-[#cfcfcf] hover:border-[#004127]"
+              }`}
+            >
+              {tab.label}
+            </a>
+          ))}
           </div>
 
           {/* Content Area */}
@@ -216,20 +217,20 @@ function AboutContent() {
         <hr></hr>
 
 
-        {/* Scroll to top */}
-        <div className="fixed bottom-8 right-8">
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="w-10 h-10 bg-[#F1BC69] text-[#1a1a1a] rounded-full flex items-center justify-center hover:bg-[#e0a94f] transition-colors cursor-pointer"
-            aria-label="Scroll to top"
-          >
-            <ArrowUp className="w-4 h-4" />
-          </button>
-        </div>
-      </main>
+        {/* Scroll to top */ }
+  <div className="fixed bottom-8 right-8">
+    <button
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      className="w-10 h-10 bg-[#F1BC69] text-[#1a1a1a] rounded-full flex items-center justify-center hover:bg-[#e0a94f] transition-colors cursor-pointer"
+      aria-label="Scroll to top"
+    >
+      <ArrowUp className="w-4 h-4" />
+    </button>
+  </div>
+      </main >
 
-      <Footer />
-    </div>
+    <Footer />
+    </div >
   )
 }
 
