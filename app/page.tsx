@@ -27,7 +27,7 @@ export default function HomePage() {
             <div className="w-full md:w-[200px] flex-shrink-0">
               <div className="relative w-full h-[140px] overflow-hidden">
                 <Image
-                  src="/images/jewelry-store.jpg"
+                  src="/images/kora_pavilion2012.jpg"
                   alt="Jewelry Store"
                   fill
                   className="object-cover"
