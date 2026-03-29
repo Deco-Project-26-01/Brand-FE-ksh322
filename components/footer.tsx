@@ -9,7 +9,7 @@ export default function Footer() {
         {/* Top row */}
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-6">
           <div className="flex items-center gap-6">
-            <Link href="/" className="text-[#ffffff] font-bold text-lg tracking-widest">
+            <Link href="/" className="flex items-center">
               <Image
                 src="/images/logo_white.png"
                 alt="DECO"
