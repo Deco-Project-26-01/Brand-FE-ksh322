@@ -72,7 +72,7 @@ export default function Header() {
       <header className="bg-[#004127] text-[#ffffff] relative z-50" ref={menuRef}>
         <div className="max-w-[1280px] mx-auto flex items-center justify-between px-6 h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center w-[80px] h-[28px]">
+          <Link href="/" className="flex items-center">
             <Image
               src="/images/logo_white.png"
               alt="DECO"
@@ -180,9 +180,8 @@ export default function Header() {
 
       {/* Fullscreen Mobile Menu */}
       <div
-        className={`fixed inset-0 bg-[#ffffff] z-[100] md:hidden transform transition-transform ease-out ${
-          mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
+        className={`fixed inset-0 bg-[#ffffff] z-[100] md:hidden transform transition-transform ease-out ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
         style={{ transitionDuration: '400ms' }}
       >
         {/* Mobile Menu Header */}
@@ -219,16 +218,14 @@ export default function Header() {
                       {item.label}
                     </span>
                     <ChevronDown
-                      className={`w-5 h-5 text-[#7d7d7d] transition-transform duration-300 ${
-                        expandedMobileMenu === item.label ? 'rotate-180' : ''
-                      }`}
+                      className={`w-5 h-5 text-[#7d7d7d] transition-transform duration-300 ${expandedMobileMenu === item.label ? 'rotate-180' : ''
+                        }`}
                     />
                   </button>
                   {/* Submenu */}
                   <div
-                    className={`overflow-hidden transition-all duration-300 ease-out ${
-                      expandedMobileMenu === item.label ? 'max-h-96 pb-4' : 'max-h-0'
-                    }`}
+                    className={`overflow-hidden transition-all duration-300 ease-out ${expandedMobileMenu === item.label ? 'max-h-96 pb-4' : 'max-h-0'
+                      }`}
                   >
                     {item.submenu.map((sub) => (
                       <Link
