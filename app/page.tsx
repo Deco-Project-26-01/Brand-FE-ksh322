@@ -27,8 +27,8 @@ export default function HomePage() {
             <div className="w-full md:w-[200px] flex-shrink-0">
               <div className="relative w-full h-[140px] overflow-hidden">
                 <Image
-                  src="/images/jewelry-store.jpg"
-                  alt="Jewelry Store"
+                  src="/images/kora_pavilion2012.jpg"
+                  alt="KORA pavilion at a jewelry trade show"
                   fill
                   className="object-cover"
                 />
@@ -37,7 +37,10 @@ export default function HomePage() {
             <div className="flex-1">
               <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">DECO IND CO., LTD. — Custom Jewellery Manufacturer in South Korea</h2>
               <Link href="#" className="inline-block mt-4 text-xs text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
-                Since 1986, we export to 20+ countries like Dubai, Hong Kong, India,Japan ,USA
+                We are a manufacturer of the 10k,14k,18k mounting for "tennis bracelets,necklace,
+                earrings" for diamonds color stones.
+                <p> We work exclusively with high-quality gold materials. All materials are carefully selected and sourced from trusted suppliers.
+                </p>
               </Link>
             </div>
           </div>
@@ -51,10 +54,17 @@ export default function HomePage() {
         <section className="max-w-[1280px] mx-auto px-6 py-12">
           <div className="flex flex-col md:flex-row items-start gap-8">
             <div className="flex-1">
-              <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">We are a manufacturer of the 10k,14k,18k mounting for "tennis bracelets,necklace,
-                earrings" for diamonds color stones. </h2>
+
+              <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">Since 1986, we manufacture and export to 20+ countries.</h2>
               <Link href="#" className="inline-block mt-4 text-xs text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
-                OEM & ODM • 20+ countries
+                <p> Main Markets : UAE, Hong Kong, India,Japan,USA </p>
+                <p>
+                  Our products are manufactured in our own factory in South Korea, ensuring full control over quality and precision.</p>
+                <p>
+                  We do not engage in mass production. Even our more accessible pieces are not anonymous stock items - each one is carefully crafted and assembled by skilled artisans.
+                </p>
+
+
               </Link>
             </div>
             <div className="w-full md:w-[240px] flex-shrink-0">
