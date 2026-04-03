@@ -169,12 +169,12 @@ function NewsContent() {
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10">
                 {paginatedNews.map((item) => (
                   <article key={item.id} className="group cursor-pointer">
-                    <div className="relative w-full h-[180px] overflow-hidden mb-3 bg-[#f5f5f5]">
+                    <div className="relative w-full h-[360px] overflow-hidden mb-3">
                       <Image
                         src={item.image}
                         alt={item.title}
                         fill
-                        className={`${item.image.includes('export_tower') ? 'object-contain' : 'object-cover'} group-hover:scale-105 transition-transform duration-300`}
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
                         {...(item.id === 1 ? { priority: true } : { loading: "lazy" })}
                       />
                     </div>
