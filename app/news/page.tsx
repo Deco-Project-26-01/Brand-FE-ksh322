@@ -20,11 +20,12 @@ const newsItems = [
 
 const noticeItems = [
   {
-    id: 3, title: "2026 March Hong Kong International Jewelry ShowCase", date: "2026.03.04", details:
+    id: 1, title: "2026 March Hong Kong International Jewelry ShowCase", date: "2026.03.04", details:
       "https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=profile"
   },
-  { id: 2, title: "Company Website Renewal", date: "2025.04.03", details: "Details for Company Website Renewal will be displayed here." },
-  { id: 1, title: "Deco Offical website OPEN!", date: "2026.03.30", details: "* Seoul Office hour (Closed on weekends and Korean public holidays" }
+  { id: 2, title: "Deco Offical website OPEN!", date: "2026.03.30", details: "* Seoul Office hour (Closed on weekends and Korean public holidays" },
+  { id: 3, title: "Company Website Renewal", date: "2025.04.03", details: "B2B CATALOG STORE OPEN 예정" },
+
 ]
 
 function NewsContent() {
@@ -126,12 +127,7 @@ function NewsContent() {
                       className="w-full grid grid-cols-[80px_1fr_120px] items-center py-4 px-4 text-left cursor-pointer hover:bg-[#f9f9f9] transition-colors"
                     >
                       <span className="text-sm text-[#7d7d7d] text-center">{item.id}</span>
-                      <span className="text-sm text-[#1a1a1a] flex items-center gap-2">
-                        {item.badge && (
-                          <span className="bg-[#7d7d7d] text-[#ffffff] text-xs px-2 py-0.5 rounded">
-                            {item.badge}
-                          </span>
-                        )}
+                      <span className="text-sm text-[#1a1a1a]">
                         {item.title}
                       </span>
                       <span className="text-sm text-[#7d7d7d] text-center">{item.date}</span>
