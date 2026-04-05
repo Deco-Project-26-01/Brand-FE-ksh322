@@ -69,7 +69,7 @@ function BrandContent() {
               </div>
 
               <Link
-                href="/online-store"
+                href="https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=profile"
                 className="inline-block bg-[#004127] text-[#ffffff] text-sm font-semibold px-6 py-2.5 rounded hover:bg-[#004127]/90 transition-colors w-fit"
               >
                 Online Store
