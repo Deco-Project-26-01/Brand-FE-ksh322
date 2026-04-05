@@ -68,12 +68,14 @@ function BrandContent() {
                 <div className="h-2.5 bg-[#ffffff] rounded-full w-[80%]" />
               </div>
 
-              <Link
+              <a
                 href="https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=profile"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block bg-[#004127] text-[#ffffff] text-sm font-semibold px-6 py-2.5 rounded hover:bg-[#004127]/90 transition-colors w-fit"
               >
                 Online Store
-              </Link>
+              </a>
             </div>
           </div>
         </section>
