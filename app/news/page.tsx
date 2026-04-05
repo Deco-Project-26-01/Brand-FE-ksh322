@@ -12,8 +12,8 @@ const newsItems = [
   { id: 1, title: "$5 million Export Tower , 2004", image: "/images/5mtop.jpg" },
   { id: 2, title: "$10 million Export Tower ,2010", image: "/images/1ktop.jpg" },
   { id: 3, title: "$30 million Export Tower, 2022", image: "/images/Deco_export_tower_3.jpg" },
-  { id: 4, title: "Dubai Show 2026", image: "/images/conference.jpg" },
-  { id: 5, title: "LasVegas Jewellery Show 2026", image: "/images/conference.jpg" },
+  { id: 4, title: "Dubai Show 2026 Feb. ", image: "/images/conference.jpg" },
+  { id: 5, title: "LasVegas Jewellery Show 2026 March", image: "/images/conference.jpg" },
   { id: 6, title: "Jewellery & Gem WORLD Hong Kong 2026", image: "/images/conference.jpg" },
 
 ]
@@ -24,7 +24,7 @@ const noticeItems = [
       "https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=profile"
   },
   { id: 2, title: "Company Website Renewal", date: "2025.04.03", details: "Details for Company Website Renewal will be displayed here." },
-  { id: 1, title: "Deco 공식 홈페이지 OPEN!", date: "2026.03.30", details: "* Seoul Office hour (Closed on weekends and Korean public holidays" }
+  { id: 1, title: "Deco Offical website OPEN!", date: "2026.03.30", details: "* Seoul Office hour (Closed on weekends and Korean public holidays" }
 ]
 
 function NewsContent() {
