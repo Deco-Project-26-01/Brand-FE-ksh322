@@ -10,7 +10,7 @@ import { ArrowUp } from "lucide-react"
 
 function BrandContent() {
   const searchParams = useSearchParams()
-  const category = searchParams.get("category") || "rings"
+  const category = searchParams.get("category") || "necklace"
 
   const categories = [
     { id: "necklace", label: "Necklace" },
@@ -24,7 +24,7 @@ function BrandContent() {
     earrings: "/images/earrings-hero.jpg",
   }
 
-  const currentHeroImage = heroImages[category] || "/images/hand-rings.jpg"
+  const currentHeroImage = heroImages[category] || "/images/necklace-hero.jpg"
 
   return (
     <div className="min-h-screen flex flex-col bg-[#ffffff]">
