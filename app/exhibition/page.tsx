@@ -13,6 +13,7 @@ const exhibitions = [
     id: 2, title: "2026 Sep, JEWELLERY & GEM FAIR WORLD HONG KONG ", date: "15.09.2026 - 19.09.2026", location: "AsiaWorld-Expo & Hong Kong Convention and Exhibition Center"
   },
 
+
 ]
 
 export default function ExhibitionPage() {
