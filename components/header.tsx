@@ -159,19 +159,19 @@ export default function Header() {
             ) : null
           )}
 
-          {/* Right side - Desktop */}
+          {/* Right side - Desktop  coming soon https://deco-store-fe-production.up.railway.app/*/}
           <div className="hidden md:flex items-center gap-4">
             <span className="text-sm text-[#ffffff] invisible">
               EN
             </span>
             <a
-              href="https://deco-store-fe-production.up.railway.app/"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#ffffff] text-[#004127] text-xs font-semibold px-4 py-2 rounded hover:bg-[#eef1f4] transition-colors"
             >
-              B2B Store
-            </a>
+              B2B Store open 예정 
+            </a> 
           </div>
 
           {/* Hamburger Menu Button - Mobile */}

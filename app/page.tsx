@@ -40,8 +40,10 @@ export default function HomePage() {
               <Link href="#" className="inline-block mt-4 text-xs text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
                 We are a manufacturer of the 10k,14k,18k mounting for "tennis bracelets,necklace,
                 earrings" for diamonds color stones.
-                <p> We work exclusively with high-quality gold materials. All materials are carefully selected and sourced from trusted suppliers.
-                </p>
+                <p> We work exclusively with high-quality gold materials. We supply it in a stone-ready setting form suitable for setting diamonds or colored stones.
+
+                Custom designs, sizes, and gold tones can be produced according to customer requests.</p>
+                
               </Link>
             </div>
           </div>
@@ -60,9 +62,9 @@ export default function HomePage() {
               <Link href="#" className="inline-block mt-4 text-xs text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
                 <p> Main Markets : UAE, Hong Kong, India,Japan,USA </p>
                 <p>
-                  Our products are manufactured in our own factory in South Korea, ensuring full control over quality and precision.</p>
+                  Our products are manufactured in our own factory in South Korea, ensuring full control over quality and precision. </p>
                 <p>
-                  We do not engage in mass production. Even our more accessible pieces are not anonymous stock items - each one is carefully crafted and assembled by skilled artisans.
+                  We do not engage in mass production. Even our more accessible pieces are not anonymous stock items - each one is carefully crafted and assembled by skilled artisans. 
                 </p>
 
 
