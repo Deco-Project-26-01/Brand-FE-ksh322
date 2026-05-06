@@ -63,7 +63,7 @@ export default function HomePage() {
               <p className="inline-block mt-4 text-xs text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
                 <p> Main Markets : UAE, Hong Kong, India,Japan,USA </p>
                 <p>
-                  Lead Time3 ~ 5days<br></br>
+                  Lead Time : 3 ~ 5days<br></br>
 
                   Our products are manufactured in our own factory in South Korea, ensuring full control over quality and precision. </p>
                 <p>
