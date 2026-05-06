@@ -38,14 +38,14 @@ export default function HomePage() {
             </div>
             <div className="flex-1">
               <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">DECO IND CO., LTD. </h2>
-              <Link href="#" className="inline-block mt-4 text-xs text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
+              <p className="inline-block mt-4 text-xs text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
                 We are a manufacturer of the 10k,14k,18k mounting for "tennis bracelets,necklace,
                 earrings" for diamonds color stones.
                 <p> We work exclusively with high-quality gold materials. We supply it in a stone-ready setting form suitable for setting diamonds or colored stones.
 
                   Custom designs, sizes, and gold tones can be produced according to customer requests.</p>
 
-              </Link>
+              </p>
             </div>
           </div>
         </section>
@@ -60,18 +60,18 @@ export default function HomePage() {
             <div className="flex-1">
 
               <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">Since 1986, we manufacture and export to 20+ countries.</h2>
-              <Link href="#" className="inline-block mt-4 text-xs text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
+              <p className="inline-block mt-4 text-xs text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
                 <p> Main Markets : UAE, Hong Kong, India,Japan,USA </p>
                 <p>
                   Lead Time3 ~ 5days<br></br>
 
                   Our products are manufactured in our own factory in South Korea, ensuring full control over quality and precision. </p>
                 <p>
-                  We do not engage in mass production. Even our more accessible pieces are not anonymous stock items - each one is carefully crafted and assembled by skilled artisans.
+                  We do not engage in mass production. Each one is carefully crafted and assembled by skilled artisans.
                 </p>
 
 
-              </Link>
+              </p>
             </div>
             <div className="w-full md:w-[240px] flex-shrink-0">
               <div className="relative w-full h-[160px] overflow-hidden">
