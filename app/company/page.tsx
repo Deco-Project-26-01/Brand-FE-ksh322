@@ -131,7 +131,7 @@ function AboutContent() {
             ) : activeTab === "how we work" ? (
               <div className="max-w-[800px] mx-auto">
                 {/* Title */}
-                <h2 className="text-2xl font-bold text-[#1a1a1a] text-center mb-2">(주) 데코산업 Deco Ind Co Ltd</h2>
+                <h2 className="text-2xl font-bold text-[#1a1a1a] text-center mb-2">(주) 데코산업 DECO IND CO., LTD.</h2>
                 <hr className="border-[#cfcfcf] mb-8" />
 
                 {/* About Deco Ind Co Ltd */}
