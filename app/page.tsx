@@ -11,12 +11,13 @@ export default function HomePage() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative w-full">
-          <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden">
+          <div className="relative w-full">
             <Image
-              src="/images/HKDTC2026.jpg"
+              src="/images/Nano2.png"
               alt="HKTDC Hong Kong International Jewellery Show 2026"
-              fill
-              className="object-cover"
+              width={1920}
+              height={1080}
+              className="w-full h-auto object-contain"
               priority
             />
           </div>
