@@ -247,9 +247,6 @@ function AboutContent() {
             )}
           </div>
         </div>
-        <hr></hr>
-
-
         {/* Scroll to top */}
         <div className="fixed bottom-8 right-8">
           <button
