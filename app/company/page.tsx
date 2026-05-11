@@ -65,13 +65,14 @@ function AboutContent() {
                   Contact
                 </h2>
                 <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
-                  <li>WhatsApp: +821027284255 <a href="" className="text-[#004127] underline"></a></li>
+                  <li>WhatsApp: +82-10-2728-4255 <a href="" className="text-[#004127] underline"></a></li>
                   <li>Business E-mail: </li>
                 </ul>
                 <hr className="my-6 border-[#cfcfcf]" />
                 <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
-                  <li>Tel: +82-2-747-0908(Sales)</li>
-                  <li>Tel: +82-63-833-8435 (Factory)</li>
+                  <li>Tel: </li>
+                  <li>Sales: +82-2-747-0908</li>
+                  <li>Factory: +82-63-833-8435</li>
                 </ul>
 
                 <hr className="my-6 border-[#cfcfcf]" />

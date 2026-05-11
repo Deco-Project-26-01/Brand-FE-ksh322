@@ -59,8 +59,8 @@ function BrandContent() {
             priority
           />
 
-          {/* Overlay content */}
-          <div className="absolute inset-0 bg-[#1a1a1a]/30 flex flex-col justify-end p-8 md:p-16 box-border">
+          {/* Overlay content - 기존 레이아웃 유지 */}
+          <div className="absolute inset-0 bg-[#1a1a1a]/30 flex flex-col justify-end w-full p-8 md:p-16 box-border">
             <div className="w-full max-w-[1280px] mx-auto">
               {/* Showroom label */}
               <div className="mb-4">
@@ -71,28 +71,27 @@ function BrandContent() {
                 Discover Our Designs
               </h2>
 
-              <a
-                href="https://buykorea.org/ec/prd/selectSvcDetail.do?goodsSn=3602010"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-[#004127] text-[#ffffff] text-sm font-semibold px-6 py-2.5 rounded hover:bg-[#004127]/90 transition-colors w-fit"
-              >
-                Online Inquiry
-              </a>
+              {/* 버튼 컨테이너: 왼쪽 정렬 및 간격 설정 */}
+              <div className="flex items-center gap-4">
+                <a
+                  href="https://buykorea.org/ec/prd/selectSvcDetail.do?goodsSn=3602010"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[#004127] text-[#ffffff] text-sm font-semibold px-6 py-2.5 rounded hover:bg-[#004127]/90 transition-colors w-fit"
+                >
+                  buyKorea Inquiry
+                </a>
 
-
-              <a
-                href="https://lasvegas.jckonline.com/en-us/about/product-directory/product-details.exh-f4860ddf-a464-4242-80d8-2b93e48f90c7.18k%20gold%20mounting%20jewellery.pro-21dd184b-81e8-47c6-ab10-6cc229c4edd0.html#/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-[#7d7d7d] text-[#ffffff] text-sm font-semibold px-6 py-2.5 rounded hover:bg-[#004127]/90 transition-colors w-fit"
-              >
-                JCK Las Vegas catalog
-              </a>
-
+                <a
+                  href="https://lasvegas.jckonline.com/en-us/about/product-directory/product-details.exh-f4860ddf-a464-4242-80d8-2b93e48f90c7.18k%20gold%20mounting%20jewellery.pro-21dd184b-81e8-47c6-ab10-6cc229c4edd0.html#/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[#7d7d7d] text-[#ffffff] text-sm font-semibold px-6 py-2.5 rounded hover:bg-[#004127]/90 transition-colors w-fit"
+                >
+                  JCK Las Vegas 2026
+                </a>
+              </div>
             </div>
-
-
           </div>
         </section>
 
