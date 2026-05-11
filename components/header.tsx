@@ -34,7 +34,11 @@ const navItems = [
       { label: "Notice", href: "/news?tab=notice" },
     ],
   },
-  { label: "Exhibition", href: "/exhibition" },
+  {
+    label: "Exhibition", href: "/exhibition",
+    submenu: [
+      { label: "Exhibition", href: "/exhibition" }]
+  },
 ]
 
 export default function Header() {
@@ -124,7 +128,7 @@ export default function Header() {
                 onMouseLeave={() => setOpenMenu(null)}
               >
                 <div className="max-w-[1280px] mx-auto px-6 py-8">
-                  <div className="flex gap-16">
+                  <div className="flex justify-center gap-16">
                     <div className="min-w-[140px]">
                       <h3 className="text-xs font-semibold text-[#7d7d7d] uppercase tracking-wider mb-4">
                         {item.label}
