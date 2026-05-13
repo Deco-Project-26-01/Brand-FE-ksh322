@@ -103,10 +103,10 @@ function AboutContent() {
                   Contact
                 </h2>
                 <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
-                  <li>WhatsApp: +82-10-2728-4255 <a href="" className="text-[#004127] underline"></a></li>
+                  <li>WhatsApp: +82-10-2728-4255</li>
                   <li>Business E-mail: </li>
                 </ul>
-                <br></br>
+                <br />
                 <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
                   <li>Tel: </li>
                   <li>Sales: +82-2-747-0908</li>
@@ -129,7 +129,7 @@ function AboutContent() {
                     width="100%"
                     height="300"
                     style={{ border: 0 }}
-                    allowFullScreen
+                    allowFullScreen={true}
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     className="rounded-lg"
@@ -252,7 +252,7 @@ function AboutContent() {
                 <section className="mb-8">
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Where to find us</h3>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    You can contact us by mail and whatsapp <a href="/company?tab=contact" className="text-[#004127] hover:underline">Contacts</a> <br></br> We deliver quickly and securely via trusted carriers, worldwide. Modes of Transport : CIF,FOB
+                    You can contact us by mail and whatsapp <a href="/company?tab=contact" className="text-[#004127] hover:underline">Contacts</a> <br /> We deliver quickly and securely via trusted carriers, worldwide. Modes of Transport : CIF,FOB
                   </p>
 
 
