@@ -23,7 +23,7 @@ const noticeItems = [
     id: 1, title: "2026 March Hong Kong International Jewelry ShowCase", date: "2026.03.04", details:
       "https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=profile"
   },
-  { id: 2, title: "JCK Las Vegas Show", date: "2026.05.29", details: " https://lasvegas.jckonline.com/en-us/about/exhibitor-directory/exhibitor-details.deco%20ind%20co%20ltd.org-0ee9678f-36bb-4160-94d9-89a8cf5b8015.html" },
+  { id: 2, title: "JCK Las Vegas Show", date: "2026.05.29", details: "https://lasvegas.jckonline.com/en-us/about/exhibitor-directory/exhibitor-details.deco%20ind%20co%20ltd.org-0ee9678f-36bb-4160-94d9-89a8cf5b8015.html" },
 
 
 ]
