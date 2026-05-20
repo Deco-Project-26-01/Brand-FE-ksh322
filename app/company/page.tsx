@@ -207,6 +207,18 @@ function AboutContent() {
                       <p className="text-sm text-[#4f4f4f] leading-relaxed">대표이사 김응열 사임 및 공동대표이사 이관영, 김기성 취임</p>
                     </div>
                   </div>
+
+                  {/* 2022 */}
+                  <div className="flex gap-8 items-start">
+                    <div className="flex-shrink-0 w-24 text-right">
+                      <div className="text-xl font-bold text-[#004127]">2022</div>
+                      <div className="text-xs text-[#7d7d7d] mt-1">12</div>
+                    </div>
+                    <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
+                    <div className="flex-1 pt-1">
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">제59회 무역의 날 기념식에서 &apos;3천만불 수출의 탑&apos; 수상</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             ) : activeTab === "how we work" ? (
