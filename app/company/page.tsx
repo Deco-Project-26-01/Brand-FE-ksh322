@@ -230,8 +230,11 @@ function AboutContent() {
                 {/* Where to find us */}
                 <section className="mb-8">
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Where to find us</h3>
+                  <p className="text-sm text-[#1a1a1a] leading-relaxed mb-2">
+                    You can contact us by mail and whatsapp <a href="/company?tab=contact" className="text-[#004127] hover:underline">Contacts</a>
+                  </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    You can contact us by mail and whatsapp <a href="/company?tab=contact" className="text-[#004127] hover:underline">Contacts</a> <br /> We deliver quickly and securely via trusted carriers, worldwide. Modes of Transport : CIF,FOB
+                    We deliver quickly and securely via trusted carriers, worldwide. Modes of Transport : CIF,FOB
                   </p>
 
 
