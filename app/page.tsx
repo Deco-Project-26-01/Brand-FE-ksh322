@@ -105,7 +105,7 @@ export default function HomePage() {
                       We do not engage in mass production. Each one is carefully crafted and assembled by skilled artisans.
                     </p> 
 
-                    <div className="max-w-[700px] mx-auto space-y-8">
+                    <div className="max-w-[700px] mx-auto space-y-8 mt-8">
                       <div>
                         <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Nature of Business</h2>
                         <p className="text-sm text-[#4f4f4f] leading-relaxed">Exporter, Manufacturer</p>
