@@ -9,14 +9,13 @@ import { ArrowUp, ChevronRight } from "lucide-react"
 import Image from "next/image"
 
 const certificateItems = [
-  { id: 1, title: "무역협회 회원증", image: "/images/conference.jpg" },
-
-  { id: 2, title: "익산시 귀금속보석 우수제조업체 인증서 ", image: "/images/424987_264942_1117.jpg" },
+  { id: 1, title: "Korea International Trade Association Membership", image: "/images/kita_kor.JPG" },
+  { id: 2, title: "Iksan 익산시 귀금속보석 우수제조업체 인증서 ", image: "/images/424987_264942_1117.jpg", link: "https://www.snmnews.com/news/articleView.html?idxno=424987" },
 ]
 
 function AboutContent() {
   const searchParams = useSearchParams()
-  // Normalize tab parameter: convert hyphens to spaces for matching
+  // Normalize tab parameter: convert hyphens to spaces for ma1986 - 08tching
   const rawTab = searchParams.get("tab") || "how we work"
   const activeTab = rawTab.replace(/-/g, " ")
 
@@ -137,15 +136,90 @@ function AboutContent() {
                 </div>
               </div>
             ) : activeTab === "history" ? (
-              <div className="w-full max-w-[900px] mx-auto">
+              <div className="w-full max-w-[1000px] mx-auto">
                 <Image
                   src="/images/deco_history.png"
                   alt="DECO Industry History Timeline - 1986 to 2026"
                   width={1400}
                   height={780}
-                  className="w-full h-auto rounded"
+                  className="w-full h-auto rounded mb-12"
                   priority
                 />
+
+                {/* Timeline */}
+                <div className="space-y-8">
+                  {/* 1986 */}
+                  <div className="flex gap-8 items-start">
+                    <div className="flex-shrink-0 w-24 text-right">
+                      <div className="text-xl font-bold text-[#004127]">1986</div>
+                      <div className="text-xs text-[#7d7d7d] mt-1">08</div>
+                    </div>
+                    <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
+                    <div className="flex-1 pt-1">
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">(주)데코산업 설립</p>
+                    </div>
+                  </div>
+
+                  {/* 1991 */}
+                  <div className="flex gap-8 items-start">
+                    <div className="flex-shrink-0 w-24 text-right">
+                      <div className="text-xl font-bold text-[#004127]">1991</div>
+                      <div className="text-xs text-[#7d7d7d] mt-1">11</div>
+                    </div>
+                    <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
+                    <div className="flex-1 pt-1">
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">자본금을 100백만원으로 변경</p>
+                    </div>
+                  </div>
+
+                  {/* 1994 */}
+                  <div className="flex gap-8 items-start">
+                    <div className="flex-shrink-0 w-24 text-right">
+                      <div className="text-xl font-bold text-[#004127]">1994</div>
+                      <div className="text-xs text-[#7d7d7d] mt-1">06</div>
+                    </div>
+                    <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
+                    <div className="flex-1 pt-1">
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">서울 종로구 봉익동 117-2 영동빌딩 402호(서울사무소)로 지점 이동</p>
+                    </div>
+                  </div>
+
+                  {/* 2002 */}
+                  <div className="flex gap-8 items-start">
+                    <div className="flex-shrink-0 w-24 text-right">
+                      <div className="text-xl font-bold text-[#004127]">2002</div>
+                      <div className="text-xs text-[#7d7d7d] mt-1">10</div>
+                    </div>
+                    <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
+                    <div className="flex-1 pt-1">
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">서울사무소를 서울 종로구 종로 143-1(종로3가) 소재로 이전</p>
+                    </div>
+                  </div>
+
+                  {/* 2012 */}
+                  <div className="flex gap-8 items-start">
+                    <div className="flex-shrink-0 w-24 text-right">
+                      <div className="text-xl font-bold text-[#004127]">2012</div>
+                      <div className="text-xs text-[#7d7d7d] mt-1">08</div>
+                    </div>
+                    <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
+                    <div className="flex-1 pt-1">
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">대표이사 김응열 사임 및 공동대표이사 이관영, 김기성 취임</p>
+                    </div>
+                  </div>
+
+                  {/* 2022 */}
+                  <div className="flex gap-8 items-start">
+                    <div className="flex-shrink-0 w-24 text-right">
+                      <div className="text-xl font-bold text-[#004127]">2022</div>
+                      <div className="text-xs text-[#7d7d7d] mt-1">12</div>
+                    </div>
+                    <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
+                    <div className="flex-1 pt-1">
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">제59회 무역의 날 기념식에서 &apos;3천만불 수출의 탑&apos; 수상</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             ) : activeTab === "how we work" ? (
               <div className="max-w-[800px] mx-auto">
@@ -176,7 +250,7 @@ function AboutContent() {
                 </section>
 
                 {/* How our jewelry is created */}
-                <section className="mb-8">
+                <section className="mb-16">
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">How our jewelry is created</h3>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
                     We work exclusively with high-quality gold materials, including 10k gold, 14k gold, and 18k gold. All materials are carefully selected and sourced from trusted suppliers.
@@ -231,8 +305,11 @@ function AboutContent() {
                 {/* Where to find us */}
                 <section className="mb-8">
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Where to find us</h3>
+                  <p className="text-sm text-[#1a1a1a] leading-relaxed mb-2">
+                    You can contact us by mail and whatsapp <a href="/company?tab=contact" className="text-[#004127] hover:underline">Contacts</a>
+                  </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    You can contact us by mail and whatsapp <a href="/company?tab=contact" className="text-[#004127] hover:underline">Contacts</a> <br /> We deliver quickly and securely via trusted carriers, worldwide. Modes of Transport : CIF,FOB
+                    We deliver quickly and securely via trusted carriers, worldwide. Modes of Transport : CIF,FOB
                   </p>
 
 
@@ -261,23 +338,47 @@ function AboutContent() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10">
                   {paginatedCerts.map((item) => (
                     <article key={item.id} className="group cursor-pointer">
-                      <div className="relative w-full h-[450px] overflow-hidden mb-3">
-                        <Image
-                          src={item.image}
-                          alt={item.title}
-                          fill
-                          className={`object-cover group-hover:scale-105 transition-all duration-300 ${allCertImagesReady ? "opacity-100" : "opacity-0"
-                            }`}
-                          onLoad={() => handleCertImageLoad(item.id)}
-                          {...(item.id === 1 ? { priority: true } : { loading: "lazy" })}
-                        />
-                        {!allCertImagesReady && (
-                          <div className="absolute inset-0 bg-[#f0f0f0] animate-pulse" />
-                        )}
-                      </div>
-                      <h3 className="text-sm font-medium text-[#1a1a1a] group-hover:text-[#004127] transition-colors">
-                        {item.title}
-                      </h3>
+                      {item.link ? (
+                        <a href={item.link} target="_blank" rel="noopener noreferrer" className="block">
+                          <div className="relative w-full h-[450px] overflow-hidden mb-3">
+                            <Image
+                              src={item.image}
+                              alt={item.title}
+                              fill
+                              className={`object-cover group-hover:scale-105 transition-all duration-300 ${allCertImagesReady ? "opacity-100" : "opacity-0"
+                                }`}
+                              onLoad={() => handleCertImageLoad(item.id)}
+                              {...(item.id === 1 ? { priority: true } : { loading: "lazy" })}
+                            />
+                            {!allCertImagesReady && (
+                              <div className="absolute inset-0 bg-[#f0f0f0] animate-pulse" />
+                            )}
+                          </div>
+                          <h3 className="text-sm font-medium text-[#1a1a1a] group-hover:text-[#004127] transition-colors hover:underline">
+                            {item.title}
+                          </h3>
+                        </a>
+                      ) : (
+                        <>
+                          <div className="relative w-full h-[450px] overflow-hidden mb-3">
+                            <Image
+                              src={item.image}
+                              alt={item.title}
+                              fill
+                              className={`object-cover group-hover:scale-105 transition-all duration-300 ${allCertImagesReady ? "opacity-100" : "opacity-0"
+                                }`}
+                              onLoad={() => handleCertImageLoad(item.id)}
+                              {...(item.id === 1 ? { priority: true } : { loading: "lazy" })}
+                            />
+                            {!allCertImagesReady && (
+                              <div className="absolute inset-0 bg-[#f0f0f0] animate-pulse" />
+                            )}
+                          </div>
+                          <h3 className="text-sm font-medium text-[#1a1a1a] group-hover:text-[#004127] transition-colors">
+                            {item.title}
+                          </h3>
+                        </>
+                      )}
                     </article>
                   ))}
                 </div>
