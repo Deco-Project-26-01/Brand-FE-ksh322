@@ -125,7 +125,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Main Markets</h2>
-                        <p className="text-sm text-[#4f4f4f] leading-relaxed">UAE, Hong Kong, India, Japan, USA, Australia, Thailand ...</p>
+                        <p className="text-sm text-[#4f4f4f] leading-relaxed">UAE, Hong Kong, India, Japan, USA, Australia, Thailand, Eastern Europe, </p>
                       </div>
                     </div>
                 </div>
