@@ -72,15 +72,17 @@ export default function HomePage() {
             </div>
             <div className="flex-1">
               <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">DECO IND CO., LTD. </h2>
-              <p className="inline-block mt-4 text-xs text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
-                We are a manufacturer of the 10k,14k,18k mounting for &quot;tennis bracelets,necklace,
-                earrings&quot; for diamonds color stones.
-                <p> We work exclusively with high-quality gold materials. </p>
-                <p>We supply it in a stone-ready setting form suitable for setting diamonds or colored stones.
-
-                  Custom designs, sizes, and gold tones can be produced according to customer requests.</p>
-
-              </p>
+              <div className="mt-4 text-sm text-[#4f4f4f] leading-relaxed space-y-2">
+                <p>
+                  We are a manufacturer of the 10k,14k,18k mounting for &quot;tennis bracelets,necklace,
+                  earrings&quot; for diamonds color stones.
+                </p>
+                <p>We work exclusively with high-quality gold materials.</p>
+                <p>
+                  We supply it in a stone-ready setting form suitable for setting diamonds or colored stones.
+                  Custom designs, sizes, and gold tones can be produced according to customer requests.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -96,16 +98,19 @@ export default function HomePage() {
               <div className="flex flex-col md:flex-row items-start gap-8">
                 <div className="flex-1">
                   <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">Since 1986, we manufacture and export to 20+ countries.</h2>
-                  <p className="inline-block mt-4 text-xs text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
+                  <div className="mt-4 text-sm text-[#4f4f4f] leading-relaxed space-y-2">
                     <p>
-                      Lead Time : 3 ~ 5days<br></br>
-
-                      Our products are manufactured in our own factory in South Korea, ensuring full control over quality and precision. </p>
+                      Lead Time : 3 ~ 5days
+                    </p>
+                    <p>
+                      Our products are manufactured in our own factory in South Korea, ensuring full control over quality and precision.
+                    </p>
                     <p>
                       We do not engage in mass production. Each one is carefully crafted and assembled by skilled artisans.
-                    </p> 
+                    </p>
+                  </div>
 
-                    <div className="max-w-[700px] mx-auto space-y-8">
+                    <div className="max-w-[700px] mx-auto space-y-8 mt-8">
                       <div>
                         <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Nature of Business</h2>
                         <p className="text-sm text-[#4f4f4f] leading-relaxed">Exporter, Manufacturer</p>
@@ -123,7 +128,6 @@ export default function HomePage() {
                         <p className="text-sm text-[#4f4f4f] leading-relaxed">UAE, Hong Kong, India, Japan, USA, Australia, Thailand ...</p>
                       </div>
                     </div>
-                  </p>
                 </div>
                 <div className="w-full md:w-[300px] flex-shrink-0">
                   <div className="relative w-full h-[500px] overflow-hidden">
