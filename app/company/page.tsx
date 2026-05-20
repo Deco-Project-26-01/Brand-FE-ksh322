@@ -15,7 +15,7 @@ const certificateItems = [
 
 function AboutContent() {
   const searchParams = useSearchParams()
-  // Normalize tab parameter: convert hyphens to spaces for matching
+  // Normalize tab parameter: convert hyphens to spaces for ma1986 - 08tching
   const rawTab = searchParams.get("tab") || "how we work"
   const activeTab = rawTab.replace(/-/g, " ")
 
@@ -136,15 +136,78 @@ function AboutContent() {
                 </div>
               </div>
             ) : activeTab === "history" ? (
-              <div className="w-full max-w-[900px] mx-auto">
+              <div className="w-full max-w-[1000px] mx-auto">
                 <Image
                   src="/images/deco_history.png"
                   alt="DECO Industry History Timeline - 1986 to 2026"
                   width={1400}
                   height={780}
-                  className="w-full h-auto rounded"
+                  className="w-full h-auto rounded mb-12"
                   priority
                 />
+
+                {/* Timeline */}
+                <div className="space-y-8">
+                  {/* 1986 */}
+                  <div className="flex gap-8 items-start">
+                    <div className="flex-shrink-0 w-24 text-right">
+                      <div className="text-xl font-bold text-[#004127]">1986</div>
+                      <div className="text-xs text-[#7d7d7d] mt-1">08</div>
+                    </div>
+                    <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
+                    <div className="flex-1 pt-1">
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">(주)데코산업 설립</p>
+                    </div>
+                  </div>
+
+                  {/* 1991 */}
+                  <div className="flex gap-8 items-start">
+                    <div className="flex-shrink-0 w-24 text-right">
+                      <div className="text-xl font-bold text-[#004127]">1991</div>
+                      <div className="text-xs text-[#7d7d7d] mt-1">11</div>
+                    </div>
+                    <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
+                    <div className="flex-1 pt-1">
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">자본금을 100백만원으로 변경</p>
+                    </div>
+                  </div>
+
+                  {/* 1994 */}
+                  <div className="flex gap-8 items-start">
+                    <div className="flex-shrink-0 w-24 text-right">
+                      <div className="text-xl font-bold text-[#004127]">1994</div>
+                      <div className="text-xs text-[#7d7d7d] mt-1">06</div>
+                    </div>
+                    <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
+                    <div className="flex-1 pt-1">
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">서울 종로구 봉익동 117-2 영동빌딩 402호(서울사무소)로 지점 이동</p>
+                    </div>
+                  </div>
+
+                  {/* 2002 */}
+                  <div className="flex gap-8 items-start">
+                    <div className="flex-shrink-0 w-24 text-right">
+                      <div className="text-xl font-bold text-[#004127]">2002</div>
+                      <div className="text-xs text-[#7d7d7d] mt-1">10</div>
+                    </div>
+                    <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
+                    <div className="flex-1 pt-1">
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">서울사무소를 서울 종로구 종로 143-1(종로3가) 소재로 이전</p>
+                    </div>
+                  </div>
+
+                  {/* 2012 */}
+                  <div className="flex gap-8 items-start">
+                    <div className="flex-shrink-0 w-24 text-right">
+                      <div className="text-xl font-bold text-[#004127]">2012</div>
+                      <div className="text-xs text-[#7d7d7d] mt-1">08</div>
+                    </div>
+                    <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
+                    <div className="flex-1 pt-1">
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">대표이사 김응열 사임 및 공동대표이사 이관영, 김기성 취임</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             ) : activeTab === "how we work" ? (
               <div className="max-w-[800px] mx-auto">
