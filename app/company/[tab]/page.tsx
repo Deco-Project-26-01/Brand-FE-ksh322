@@ -41,7 +41,7 @@ const tabConfig: Record<TabType, { label: string; title: string; description: st
 
 export default function CompanyTabPage({ params }: { params: Promise<{ tab: string }> }) {
   const { tab } = use(params)
-  
+
   if (!validTabs.includes(tab as TabType)) {
     notFound()
   }
@@ -294,7 +294,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                     Our jewelry is manufactured in our own factory in South Korea, ensuring full control over quality and precision. We work with long-standing, carefully vetted international partners .
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed">
-                    We do not engage in mass production. Even our more accessible pieces are not anonymous stock items - each one is carefully crafted and assembled by skilled artisans.
+                    We balance precision craftsmanship with reliable production capacity. Each piece passes individual QC inspection.
                   </p>
                 </section>
 
@@ -406,11 +406,10 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                       <button
                         key={page}
                         onClick={() => setCertPage(page)}
-                        className={`w-8 h-8 flex items-center justify-center text-sm font-medium rounded cursor-pointer transition-colors ${
-                          certPage === page
+                        className={`w-8 h-8 flex items-center justify-center text-sm font-medium rounded cursor-pointer transition-colors ${certPage === page
                             ? "bg-[#004127] text-[#ffffff]"
                             : "text-[#7d7d7d] hover:text-[#1a1a1a]"
-                        }`}
+                          }`}
                       >
                         {page}
                       </button>
