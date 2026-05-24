@@ -143,7 +143,6 @@ export default function HomePage() {
               </div>
               <p className="text-right mt-4 text-sm text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors"> CEO : KIM KISEONG, LEE KWANYOUNG</p>
             </section>
-        </div>
       </main>
 
       {/* Footer */}
