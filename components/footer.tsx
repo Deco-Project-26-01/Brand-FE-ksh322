@@ -44,7 +44,7 @@ export default function Footer() {
               <FaAddressCard className="w-4 h-4" />
               <span>buyKOREA</span>
             </a>
-            <a href="https://wa.me/821027284255" target="_blank" rel="noopener noreferrer" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
+            <a href="https://wa.me/821027284255" rel="noopener noreferrer" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
               <FaWhatsapp className="w-4 h-4" />
               <span>Whatsapp</span>
             </a>
