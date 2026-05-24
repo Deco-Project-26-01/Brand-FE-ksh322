@@ -64,33 +64,51 @@ export default function HomePage() {
           <div className="flex flex-col md:flex-row items-start gap-8">
             <div className="flex-1">
               <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">
-                Since 1986, we manufacture and export to 20+ countries.
+                Since 1986, manufacturing in South Korea. Exporting to 20+ countries worldwide.
               </h2>
-              <div className="mt-4 text-sm text-[#4f4f4f] leading-relaxed space-y-2">
-                <p>Lead Time : 3~5 days for sample, 2~4 weeks for bulk order</p>
-                <p>
-                  Our products are manufactured in our own factory in South Korea,
-                  ensuring full control over quality and precision.
-                </p>
-                <p>Each one is carefully crafted and assembled by skilled artisans.</p>
+
+              {/* Stats cards */}
+              <div className="grid grid-cols-3 gap-3 sm:gap-4 mb-6 max-w-[600px]">
+                <div className="text-center p-4 sm:p-5 border border-[#eef1f4]">
+                  <div className="text-2xl sm:text-3xl font-bold text-[#004127]">40+</div>
+                  <div className="text-xs text-[#7d7d7d] mt-1.5 leading-tight">
+                    Years of<br />Manufacturing
+                  </div>
+                </div>
+                <div className="text-center p-4 sm:p-5 border border-[#eef1f4]">
+                  <div className="text-2xl sm:text-3xl font-bold text-[#004127]">22</div>
+                  <div className="text-xs text-[#7d7d7d] mt-1.5 leading-tight">
+                    Export Countries<br />in 2025
+                  </div>
+                </div>
+                <div className="text-center p-4 sm:p-5 border border-[#eef1f4]">
+                  <div className="text-2xl sm:text-3xl font-bold text-[#004127]">3~5</div>
+                  <div className="text-xs text-[#7d7d7d] mt-1.5 leading-tight">
+                    Days Sample<br />Lead Time
+                  </div>
+                </div>
               </div>
 
               <div className="max-w-[700px] mx-auto space-y-8 mt-8">
                 <div>
-                  <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Product</h2>
+                  <h3 className="text-lg font-semibold text-[#1a1a1a] mb-2">Product</h3>
                   <p className="text-sm text-[#4f4f4f] leading-relaxed">
                     Gold Jewellery Set, White Gold Jewellery, Diamond Jewellery
                   </p>
                 </div>
                 <div>
-                  <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Brand</h2>
+                  <h3 className="text-lg font-semibold text-[#1a1a1a] mb-2">Brand</h3>
                   <p className="text-sm text-[#4f4f4f] leading-relaxed">
                     18K gold mounting jewellery of tennis bracelet, necklace & earring for diamonds.
                   </p>
                 </div>
                 <div>
-                  <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Main Markets</h2>
+                  <h3 className="text-lg font-semibold text-[#1a1a1a] mb-2">Main Markets</h3>
                   <div className="flex flex-wrap gap-4 items-center">
+                    <div className="flex items-center gap-1.5">
+                      <span className="fi fi-us text-xl"></span>
+                      <span className="text-sm text-[#4f4f4f]">USA</span>
+                    </div>
                     <div className="flex items-center gap-1.5">
                       <span className="fi fi-ae text-xl"></span>
                       <span className="text-sm text-[#4f4f4f]">UAE</span>
@@ -106,10 +124,6 @@ export default function HomePage() {
                     <div className="flex items-center gap-1.5">
                       <span className="fi fi-jp text-xl"></span>
                       <span className="text-sm text-[#4f4f4f]">Japan</span>
-                    </div>
-                    <div className="flex items-center gap-1.5">
-                      <span className="fi fi-us text-xl"></span>
-                      <span className="text-sm text-[#4f4f4f]">USA</span>
                     </div>
                     <div className="flex items-center gap-1.5">
                       <span className="fi fi-au text-xl"></span>
@@ -140,11 +154,11 @@ export default function HomePage() {
                   className="object-cover"
                 />
               </div>
+              <p className="text-right mt-2 text-sm text-[#7d7d7d]">
+                CEO : KIM KISEONG, LEE KWANYOUNG
+              </p>
             </div>
           </div>
-          <p className="text-right mt-4 text-sm text-[#7d7d7d]">
-            CEO : KIM KISEONG, LEE KWANYOUNG
-          </p>
         </section>
       </main>
 
