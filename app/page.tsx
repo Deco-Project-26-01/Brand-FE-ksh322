@@ -1,14 +1,9 @@
 "use client"
 
-import dynamic from "next/dynamic"
 import Header from "@/components/header"
+import Footer from "@/components/footer"
 import Image from "next/image"
 import "flag-icons/css/flag-icons.min.css"
-
-const Footer = dynamic(() => import("@/components/footer"), {
-  ssr: false,
-  loading: () => null,
-})
 
 export default function HomePage() {
   return (
@@ -44,7 +39,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex-1">
-              <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">DECO IND CO., LTD. </h2>
+              <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">DECO IND CO., LTD.</h2>
               <div className="mt-4 text-sm text-[#4f4f4f] leading-relaxed space-y-2">
                 <p>
                   We are a manufacturer of the 10k,14k,18k mounting for &quot;tennis bracelets,necklace,
@@ -68,28 +63,30 @@ export default function HomePage() {
         <section className="max-w-[1280px] mx-auto px-6 py-12">
           <div className="flex flex-col md:flex-row items-start gap-8">
             <div className="flex-1">
-              <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">Since 1986, we manufacture and export to 20+ countries.</h2>
+              <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">
+                Since 1986, we manufacture and export to 20+ countries.
+              </h2>
               <div className="mt-4 text-sm text-[#4f4f4f] leading-relaxed space-y-2">
+                <p>Lead Time : 3~5 days for sample, 2~4 weeks for bulk order</p>
                 <p>
-                  Lead Time : 3~5 days for sample, 2~4 weeks for bulk order
+                  Our products are manufactured in our own factory in South Korea,
+                  ensuring full control over quality and precision.
                 </p>
-                <p>
-                  Our products are manufactured in our own factory in South Korea, ensuring full control over quality and precision.
-                </p>
-                <p>
-                  Each one is carefully crafted and assembled by skilled artisans.
-                </p>
+                <p>Each one is carefully crafted and assembled by skilled artisans.</p>
               </div>
 
               <div className="max-w-[700px] mx-auto space-y-8 mt-8">
-
                 <div>
                   <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Product</h2>
-                  <p className="text-sm text-[#4f4f4f] leading-relaxed">Gold Jewellery Set, White Gold Jewellery, Diamond Jewellery</p>
+                  <p className="text-sm text-[#4f4f4f] leading-relaxed">
+                    Gold Jewellery Set, White Gold Jewellery, Diamond Jewellery
+                  </p>
                 </div>
                 <div>
                   <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Brand</h2>
-                  <p className="text-sm text-[#4f4f4f] leading-relaxed">18K gold mounting jewellery of tennis bracelet, necklace & earring for diamonds.</p>
+                  <p className="text-sm text-[#4f4f4f] leading-relaxed">
+                    18K gold mounting jewellery of tennis bracelet, necklace & earring for diamonds.
+                  </p>
                 </div>
                 <div>
                   <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Main Markets</h2>
@@ -138,18 +135,19 @@ export default function HomePage() {
               <div className="relative w-full h-[500px] overflow-hidden">
                 <Image
                   src="/images/decoindcoltd_factory.JPG"
-                  alt="ceo"
+                  alt="DECO Industry factory exterior with company executives"
                   fill
                   className="object-cover"
                 />
               </div>
             </div>
           </div>
-          <p className="text-right mt-4 text-sm text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors"> CEO : KIM KISEONG, LEE KWANYOUNG</p>
+          <p className="text-right mt-4 text-sm text-[#7d7d7d]">
+            CEO : KIM KISEONG, LEE KWANYOUNG
+          </p>
         </section>
       </main>
 
-      {/* Footer */}
       <Footer />
     </div>
   )
