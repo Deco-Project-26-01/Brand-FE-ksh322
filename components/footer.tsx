@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Linkedin, Instagram } from "lucide-react"
+import { Linkedin } from "lucide-react"
 import { FaAddressCard } from "react-icons/fa"
 import { FaWhatsapp } from "react-icons/fa"
 import Image from "next/image"
@@ -22,7 +22,7 @@ export default function Footer() {
             </Link>
           </div>
           <Link
-            href="/company?tab=contact"
+            href="/company/contact"
             className="bg-[#004127] text-[#ffffff] text-xs font-semibold px-5 py-2 rounded hover:bg-[#004127]/90 transition-colors"
           >
             Contact
@@ -44,7 +44,7 @@ export default function Footer() {
               <FaAddressCard className="w-4 h-4" />
               <span>buyKOREA</span>
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
+            <a href="https://wa.me/821027284255" target="_blank" rel="noopener noreferrer" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
               <FaWhatsapp className="w-4 h-4" />
               <span>Whatsapp</span>
             </a>
