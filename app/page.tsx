@@ -155,7 +155,7 @@ export default function HomePage() {
                 />
               </div>
               <p className="text-right mt-2 text-sm text-[#7d7d7d]">
-                CEO : KIM KISEONG, LEE KWANYOUNG
+                CEO: Kim Ki-seong, Lee Kwan-young
               </p>
             </div>
           </div>
